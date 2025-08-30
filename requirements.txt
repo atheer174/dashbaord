@@ -4,4 +4,13 @@ streamlit==1.49.1
 pandas>=1.5
 pdfplumber>=0.11.7
 openpyxl>=3.1.0
-matplotlib==3.10.6
+# Use Plotly for interactive charts with hover support.  The latest version as of
+# August 2025 is 6.3.0https://pypi.org/project/plotly/#:~:text=plotly%206.
+plotly==6.3.0
+# Arabic reshaper allows proper shaping of Arabic characters for libraries that
+# don't support Arabic nativelyhttps://pypi.org/project/arabic-reshaper/#:~:text=1,according%20to%20their%20surrounding%20characters.
+arabic-reshaper==3.0.0
+# Use an older python-bidi version (0.4.2) to ensure compatibility without
+# requiring Rust for compilation.  This version provides the BiDi algorithm
+# implemented in pure Python.
+python-bidi==0.4.2
